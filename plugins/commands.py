@@ -221,7 +221,7 @@ async def start(client, message):
                 ]
             ]
         ),
-        reply_to_message_id=message.chat.id
+        reply_to_message_id=message.message.chat.id
     )
     if Config.SAVE_USER == "yes":
         try:
@@ -252,7 +252,7 @@ async def help(client, message):
                 ]
             ]
         ),
-        reply_to_message_id=message.chat.id
+        reply_to_message_id=message.message.chat.id
     )
 
 
